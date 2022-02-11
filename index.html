@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Result</title>
+  </head>
+  <body>
+  
+
+
+    <div class="container my-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <div class="card-header">
+                <h2>Add new student</h2>
+              </div>
+              <div class="card-body">
+                <form action="#">
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Name">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Roll Number">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Class Name">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Photo">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input type="radio" name="gender" value="male" id="male"><label for="male">Male</label>
+                    <input type="radio" name="gender" value="female" id="female"><label for="female">Female</label>
+                  </div>
+                  <h3>marks</h3>
+                  <hr>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Bangla">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="English">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Math">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Science">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Social Science">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="form-control" type="text" placeholder="Religion">
+                  </div>
+                  <div class="form-group mb-3">
+                    <input class="btn btn-primary w-100" type="submit" value="Add new student">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Name</th>
+                      <th>Roll</th>
+                      <th>Class</th>
+                      <th>Gender</th>
+                      <th>Grade</th>
+                      <th>CGPA</th>
+                      <th>Photo</th>
+                      <th>Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>Mukti</td>
+                      <td>03</td>
+                      <td>Nine</td>
+                      <td>Female</td>
+                      <td>A</td>
+                      <td>4.66</td>
+                      <td>photo</td>
+                      <td><button class="btn btn-info btn-sm mx-1">View</button><button class="btn btn-danger btn-sm">Delete</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./functions.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
