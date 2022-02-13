@@ -3,7 +3,7 @@ const student_form = document.getElementById('student_form');
 
 student_form.addEventListener('submit', function(e){
     e.preventDefault();
-    let name = student_form.querySelector("input[placeholder='Student Name']");
+    let name = student_form.querySelector("input[placeholder='Name']");
     let roll = student_form.querySelector("input[placeholder='Roll Number']");
     let student_class = student_form.querySelector("input[placeholder='Class Name']");
     let photo = student_form.querySelector("input[placeholder='Photo']");
@@ -15,10 +15,24 @@ student_form.addEventListener('submit', function(e){
     let ss = student_form.querySelector("input[placeholder='Social Science']");
     let reli = student_form.querySelector("input[placeholder='Religion']");
 
-    if(name.value == '' || roll.value == '' || student_class.value == ''){
+    if(name.value == '' || roll.value == '' || student_class.value == '' || photo.value == '' || gender.value == ''){
         alert('All fields are requird');
     }else{
-        console.log('Done');
+        let storate_data = [];
+        if( dataGet('result_apps')){
+            storate_data = dataGet('result_apps');
+        }
+
+        storate_data.push({
+            name: name.value,
+            roll: roll.value,
+            className: student_class.value,
+            gender: gender.value,
+            photo: photo.value
+        })
+
+        dataSend('result_apps', storate_data);
+
     }
 
 });
