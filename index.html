@@ -81,18 +81,8 @@
                       <th>Action</th>
                     </tr>
                   </thead>
-                  <tbody>
-                    <tr>
-                      <td>1</td>
-                      <td>Mukti</td>
-                      <td>03</td>
-                      <td>Nine</td>
-                      <td>Female</td>
-                      <td>A</td>
-                      <td>4.66</td>
-                      <td>photo</td>
-                      <td><button class="btn btn-info btn-sm mx-1">View</button><button class="btn btn-danger btn-sm">Delete</button></td>
-                    </tr>
+                  <tbody id="data_list">
+                    
                   </tbody>
                 </table>
               </div>
@@ -101,7 +91,18 @@
         </div>
     </div>
 
-
+<!-- student single data modal -->
+<div class="modal fade" id="student_single_modal">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="student-result-data">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
@@ -109,6 +110,7 @@
     <script src="./assets/js/bootstrap.min.js"></script>
     <script src="./assets/js/popper.min.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
+    <script src="./Result.js"></script>
     <script src="./functions.js"></script>
     <script src="./app.js"></script>
   </body>

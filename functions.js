@@ -6,7 +6,7 @@ function dataSend(key , arr){
     return true;
 }
 
-function data(key){
+function dataGet(key){
     let data = localStorage.getItem(key);
-    return data ? JSON.parse() : false ;
+    return data ? JSON.parse(data) : false ;
 }

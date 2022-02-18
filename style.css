@@ -8,3 +8,15 @@
 body{
     background-color: aliceblue;
 }
+
+
+.student-result-data img{
+    width: 150px;
+    height: auto;
+    border: 10px solid #000;
+    display: block;
+    margin: auto;
+}
+.student-result-data h2{
+    text-align: center;
+}
